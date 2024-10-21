@@ -1,0 +1,35 @@
+.logo-container {
+    user-select: none;
+}
+*::selection {
+    background-color: #0f98;
+}
+p, li {
+    color: #ddd;
+}
+code {
+    padding: 4px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-radius: 4px;
+    background-color: #111;
+}
+sub {
+    text-align: center;
+}
+sub > p {
+    color: #888;
+}
+
+p.warning {
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid #fa0;
+    background-color: #fa04;
+}
+p.warning::selection {
+    background-color: #fa0;
+}
+p.warning > *::selection {
+    background-color: #fa0;
+}
