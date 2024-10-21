@@ -2,10 +2,64 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Zoidcord</title>
+        <title>Nexulien</title>
+        <style>
+            /* Bone Structure so the page doesnt flash white */
+            html {
+                display: block;
+                background-color: #222;
+                color: white;
+                font-family: sans-serif;
+                height: 100vh;
+            }
+            body {
+                width: 512px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 64px;
+            }
+            a {
+                color: #0f9;
+            }
+            .logo-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            p.warning {
+                padding: 16px;
+                background-color: #fa04;
+            }
+        </style>
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="preload" href="assets/logo.svg" as="image" type="image/svg">
+        <link rel="preload" href="assets/nexulien.svg" as="image" type="image/svg">
     </head>
     <body>
-        <h1>Work in Progress</h1>
-        <p>This page is currently under construction.</p>
+        <span class="logo-container">
+            <img src="assets/logo.svg" draggable="false" height="192px">
+            <img src="assets/nexulien.svg" draggable="false">
+        </span>
+        <p class="warning"><b>Hey!</b> This site is still undergoing active development.
+            For now, have this temporary site while we work on the main one.</p>
+        <h1>Links</h1>
+        <ul>
+            <li>GitHub Organization: <a href="https://github.com/Nexulien">https://github.com/Nexulien</a></li>
+            <li>Mod Repo: <a href="https://github.com/Nexulien/Nexulien">https://github.com/Nexulien/Nexulien</a></li>
+            <li>Installer Repo: <a href="https://github.com/Nexulien/Installer">https://github.com/Nexulien/Installer</a></li>
+        </ul>
+        <h1>Temporary API+ Documentation</h1>
+        <h2>Extra PluginDef features</h2>
+        <p>In a PluginDef, you get the extra parameter <code>nexulien</code>.
+            This value is used for the filter by "Nexulien-Exclusives" search.
+            If the plugin added is uniquely made for Nexulien, please set this to <code>true</code>!
+            Otherwise, you can ignore it (ex.: User Scripts).
+        </p>
+        <h2>Extra Slash Command features</h2>
+        <p>If you're on a dev-build, you can make extra debug commands that aren't visible on standalone.
+            You can easily make these "dev-commands" by just setting the <code>devOnly</code> parameter in the command to <code>true</code>!
+        </p>
+        <sub><p>Site made with ❤ by <a href="https://github.com/JaegerwaldDev">Jae</a></p></sub>
     </body>
 </html>
